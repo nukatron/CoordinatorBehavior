@@ -10,7 +10,7 @@ import com.nutron.coordinatorbehavior.presentation.scrolling.ScrollingActivity
 import com.nutron.coordinatorbehavior.presentation.scrollingprofile.ScrollingProfileActivity
 import kotlinx.android.synthetic.main.activity_main.*
 import android.support.v7.widget.DividerItemDecoration
-
+import com.nutron.coordinatorbehavior.data.entity.MenuData
 
 
 class MainActivity : AppCompatActivity() {
