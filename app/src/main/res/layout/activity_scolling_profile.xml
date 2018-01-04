@@ -16,7 +16,8 @@
                 android:id="@+id/collapsing"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                app:layout_scrollFlags="scroll|exitUntilCollapsed">
+                app:layout_scrollFlags="scroll|exitUntilCollapsed"
+                app:title="">
 
                 <ImageView
                     android:id="@+id/coverImageView"

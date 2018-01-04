@@ -93,4 +93,10 @@
     <string name="title_activity_floating_bottom">FloatingBottomActivity</string>
     <string name="title_activity_scrolling">ScrollingActivity</string>
     <string name="title_activity_scrolling_profile">ScrollingProfileActivity</string>
+    <string name="title_activity_circular_reveal_shared_element">
+        CircularRevealSharedElementActivity
+    </string>
+    
+    <!-- transition -->
+    <string name="rounded_color_view_transition_name"/>
 </resources>
