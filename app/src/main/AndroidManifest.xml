@@ -18,7 +18,6 @@
             android:theme="@style/AppTheme.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
@@ -37,8 +36,11 @@
         <activity
             android:name=".presentation.circularreveal.postlollipop.CircularRevealSharedElementActivity"
             android:label="@string/title_activity_circular_reveal_shared_element"
+            android:theme="@style/TransparentStatusBar" />
+
+        <activity android:name=".presentation.circularreveal.postlollipop.CircularRevealSharedElementListActivity"
+            android:label="@string/title_activity_scrolling_profile"
             android:theme="@style/AppTheme.NoActionBar" />
-        <activity android:name=".presentation.circularreveal.postlollipop.CircularRevealSharedElementListActivity"></activity>
     </application>
 
 </manifest>

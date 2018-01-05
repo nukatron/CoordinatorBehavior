@@ -1,16 +1,20 @@
 package com.nutron.coordinatorbehavior.presentation.circularreveal
 
+import android.net.Uri
 import android.support.v7.widget.RecyclerView
+import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import com.facebook.drawee.backends.pipeline.Fresco
 import com.nutron.coordinatorbehavior.R
-import com.nutron.coordinatorbehavior.data.entity.MenuData
-import kotlinx.android.synthetic.main.item_layout.view.*
+import com.nutron.coordinatorbehavior.data.entity.ImageTitleData
+import com.nutron.coordinatorbehavior.extension.setImageSrc
+import kotlinx.android.synthetic.main.item_image_title_layout.view.*
 
 
-class ItemListAdapter(val data: List<MenuData>,
-                      val listener: (view: View, data: MenuData) -> Unit)
+class ItemListAdapter(val data: List<ImageTitleData>,
+                      val listener: (view: View, data: ImageTitleData) -> Unit)
     : RecyclerView.Adapter<ItemListAdapter.ViewHolder>() {
 
     override fun getItemCount(): Int {
@@ -38,7 +42,9 @@ class ItemListAdapter(val data: List<MenuData>,
             }
         }
 
-        fun bind(item: MenuData) {
+        fun bind(item: ImageTitleData) {
+            Log.d("DEBUGX", "item.id: ${item.id}")
+            view.roundedImage.setImageSrc(item.id)
             view.itemTitleTextView.text = item.title
         }
 
